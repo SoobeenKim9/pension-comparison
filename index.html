@@ -96,7 +96,7 @@
       border-radius:999px;
       padding:3px 8px;
       max-width:100%;
-      word-break:break-all;
+      white-space:nowrap;
     }
     .room-link:hover{text-decoration:underline;background:#f7efe4}
     .feature{margin:0 0 8px;color:var(--muted);font-size:14px}
@@ -160,8 +160,7 @@
         font-size:11px;
         line-height:1.25;
         padding:3px 8px;
-        overflow-wrap:anywhere;
-        word-break:break-word;
+        white-space:nowrap;
       }
       .feature{font-size:13px;line-height:1.35;margin-bottom:8px;text-align:left}
       .meta{gap:6px}
@@ -227,7 +226,7 @@ list.innerHTML=pensions.map((p)=>{
       <div class="head">
         <div class="title-row">
           <h3>${p.name}</h3>
-          <a class="room-link" href="${p.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">링크 : ${p.url}</a>
+          <a class="room-link" href="${p.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="숙소 페이지 열기" aria-label="${p.name} 숙소 페이지 열기">숙소 링크</a>
         </div>
         <p class="feature">${p.feature}</p>
         <div class="meta">
