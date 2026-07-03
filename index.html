@@ -4,19 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>🏡 단체 여행 숙소 비교</title>
-  <meta name="description" content="10개 숙소의 기준가격, 인원, 객실, 욕실, 시설, 추가요금을 한눈에 비교해보세요." />
+  <title>우리 어디 가지?</title>
+  <meta name="description" content="10월 24일 여행 숙소 후보를 한눈에 비교해보세요." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="🏡 단체 여행 숙소 비교" />
-  <meta property="og:description" content="10개 숙소의 기준가격, 인원, 객실, 욕실, 시설, 추가요금을 한눈에 비교해보세요." />
+  <meta property="og:title" content="우리 어디 가지?" />
+  <meta property="og:description" content="10월 24일 여행 숙소 후보를 한눈에 비교해보세요." />
   <meta property="og:url" content="https://soobeenkim9.github.io/pension-comparison/" />
-  <meta property="og:image" content="https://soobeenkim9.github.io/pension-comparison/og-image.png" />
+  <meta property="og:image" content="https://soobeenkim9.github.io/pension-comparison/og-image-v2.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="🏡 단체 여행 숙소 비교" />
-  <meta name="twitter:description" content="10개 숙소의 기준가격, 인원, 객실, 욕실, 시설, 추가요금을 한눈에 비교해보세요." />
-  <meta name="twitter:image" content="https://soobeenkim9.github.io/pension-comparison/og-image.png" />
+  <meta name="twitter:title" content="우리 어디 가지?" />
+  <meta name="twitter:description" content="10월 24일 여행 숙소 후보를 한눈에 비교해보세요." />
+  <meta name="twitter:image" content="https://soobeenkim9.github.io/pension-comparison/og-image-v2.png" />
 
   <style>
     :root{
@@ -132,7 +134,7 @@
     @media(max-width:720px){
       .wrap{padding:0 14px}
       header{padding:28px 0 18px}
-      h1{font-size:28px}
+      h1{font-size:30px}
       main{padding:20px 0 56px}
       .section-title{margin-bottom:14px}
       .list{gap:18px}
@@ -144,37 +146,75 @@
         min-height:auto;
         align-items:center;
       }
-      .thumb{width:76px;height:76px;border-radius:15px;align-self:center}
+      .thumb{
+        width:76px;
+        height:76px;
+        border-radius:15px;
+        align-self:center;
+      }
+      .head{
+        min-width:0;
+        text-align:left;
+      }
       .title-row{
         display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        gap:5px;
-        margin-bottom:6px;
+        flex-direction:row;
+        align-items:center;
+        justify-content:flex-start;
+        gap:7px;
+        flex-wrap:wrap;
+        margin-bottom:5px;
       }
-      .head{min-width:0;text-align:left}
-      .head h3{font-size:20px;line-height:1.18;text-align:left}
+      .head h3{
+        font-size:20px;
+        line-height:1.18;
+        text-align:left;
+      }
       .room-link{
-        display:inline-block;
+        display:inline-flex;
+        align-items:center;
         max-width:100%;
         font-size:11px;
-        line-height:1.25;
-        padding:3px 8px;
+        line-height:1.2;
+        padding:4px 8px;
         white-space:nowrap;
       }
-      .feature{font-size:13px;line-height:1.35;margin-bottom:8px;text-align:left}
+      .feature{
+        font-size:13px;
+        line-height:1.35;
+        margin-bottom:8px;
+        text-align:left;
+      }
       .meta{gap:6px}
-      .meta span{font-size:12px;line-height:1.2;padding:5px 8px}
-      .chev{width:24px;height:24px;font-size:22px;align-self:center;justify-self:end}
+      .meta span{
+        font-size:12px;
+        line-height:1.2;
+        padding:5px 8px;
+      }
+      .chev{
+        width:24px;
+        height:24px;
+        font-size:22px;
+        align-self:center;
+        justify-self:end;
+      }
       .detail{padding:14px}
       .grid{grid-template-columns:repeat(2,1fr)}
       .cols{grid-template-columns:1fr}
     }
     @media(max-width:380px){
-      summary{grid-template-columns:70px minmax(0,1fr) 22px;gap:10px;padding:12px}
-      .thumb{width:70px;height:70px;border-radius:14px}
+      summary{
+        grid-template-columns:68px minmax(0,1fr) 22px;
+        gap:10px;
+        padding:12px;
+      }
+      .thumb{
+        width:68px;
+        height:68px;
+        border-radius:14px;
+      }
       .head h3{font-size:19px}
-      .room-link{font-size:10.5px}
+      .room-link{font-size:10.5px;padding:4px 7px}
       .meta span{font-size:11.5px;padding:4px 7px}
     }
   </style>
@@ -183,8 +223,8 @@
 <header>
   <div class="wrap">
     <div class="eyebrow">1박 단체 여행 후보</div>
-    <h1>🏡 단체 여행 숙소 비교</h1>
-    <p class="subtitle">펜션 리스트를 먼저 보고, 숙소를 누르면 상세 정보가 펼쳐집니다.</p>
+    <h1>우리 어디 가지?</h1>
+    <p class="subtitle">10월 24일 여행 숙소 후보를 한눈에 비교해보세요.</p>
     <div class="common">
       <strong>공통사항</strong>
       <span>기준인원 초과 : 1인 2만원</span>
